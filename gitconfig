@@ -1,0 +1,10 @@
+[user]
+	email = HorayNarea@gmail.com
+	name = Thomas Sänger
+	signingkey = 0xE0D71DB4
+[color]
+	ui = auto
+[push]
+	default = simple
+[core]
+	editor = nano
