@@ -2426,16 +2426,16 @@ if [[ -r /etc/debian_version ]] ; then
     alias acsh='apt-cache show'
     #a3# Execute \kbd{apt-cache policy}
     alias acp='apt-cache policy'
-    #a3# Execute \kbd{apt-get dist-upgrade}
-    salias adg="apt-get dist-upgrade"
-    #a3# Execute \kbd{apt-get install}
-    salias agi="apt-get install"
+    #a3# Execute \kbd{apt-fast dist-upgrade}
+    salias adg="apt-fast dist-upgrade"
+    #a3# Execute \kbd{apt-fast install}
+    salias agi="apt-fast install"
     #a3# Execute \kbd{aptitude install}
     salias ati="aptitude install"
-    #a3# Execute \kbd{apt-get upgrade}
-    salias ag="apt-get upgrade"
-    #a3# Execute \kbd{apt-get update}
-    salias au="apt-get update"
+    #a3# Execute \kbd{apt-fast upgrade}
+    salias ag="apt-fast upgrade"
+    #a3# Execute \kbd{apt-fast update}
+    salias au="apt-fast update"
     #a3# Execute \kbd{aptitude update ; aptitude safe-upgrade}
     salias -a up="aptitude update ; aptitude safe-upgrade"
     #a3# Execute \kbd{dpkg-buildpackage}
@@ -2444,7 +2444,7 @@ if [[ -r /etc/debian_version ]] ; then
     alias ge='grep-excuses'
 
     # get a root shell as normal user in live-cd mode:
-    if isgrmlcd && [[ $UID -ne 0 ]] ; then
+    if [[ $UID -ne 0 ]] ; then
        alias su="sudo su"
      fi
 
