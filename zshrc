@@ -1,7 +1,4 @@
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/horaynarea/.zshrc'
-
+fpath=(~/.dotfiles/zsh-completions/src $fpath)
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
