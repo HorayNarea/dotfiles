@@ -2,7 +2,6 @@
 DOTFILES=~/.dotfiles
 GIT=~/.gitconfig
 HTOP=~/.config/htop/htoprc
-SCREEN=~/.screenrc
 ARIA2=~/.aria2
 
 git submodule init
@@ -13,9 +12,6 @@ ln -s $DOTFILES/gitconfig $GIT
 
 mv -f $HTOP $HTOP.bak > /dev/null
 ln -s $DOTFILES/htoprc $HTOP
-
-mv -f $SCREEN $SCREEN.bak > /dev/null
-ln -s $DOTFILES/screenrc $SCREEN
 
 mv $ARIA2 $ARIA2.bak > /dev/null
 ln -s $DOTFILES/aria2 $ARIA2
