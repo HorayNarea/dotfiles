@@ -17,7 +17,7 @@ mv $ARIA2 $ARIA2.bak > /dev/null
 ln -s $DOTFILES/aria2 $ARIA2
 
 sudo mv -f /etc/zsh /etc/zsh.bak > /dev/null
-sudo ln -s $DOTFILES/zsh /etc/zsh
+sudo cp -r $DOTFILES/zsh /etc/zsh
 
 mv -f ~/.zshrc ~/.zshrc.bak > /dev/null
 ln -s $DOTFILES/zshrc ~/.zshrc
