@@ -4,8 +4,11 @@ alias serve='python -m SimpleHTTPServer 8888'
 alias rm='rm -I'
 
 fpath=(~/.dotfiles/zsh-completions/src $fpath)
-PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 autoload -Uz compinit
 compinit
+
+# pkg-src
+PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin
