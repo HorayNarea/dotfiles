@@ -6,3 +6,5 @@
 	ui = auto
 [core]
 	editor = nano
+[diff]
+	algorithm = patience
