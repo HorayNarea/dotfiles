@@ -7,6 +7,7 @@ alias rm='rm -I'
 
 # many auto-completion, such shell, wow
 fpath=(~/.dotfiles/zsh-completions/src $fpath)
+fpath=(~/.dotfiles/other-completions $fpath)
 
 PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
 
