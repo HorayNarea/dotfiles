@@ -21,4 +21,4 @@ sudo cp -r $DOTFILES/zsh /etc/zsh
 
 mv -f ~/.zshrc ~/.zshrc.bak > /dev/null
 ln -s $DOTFILES/zshrc ~/.zshrc
-rm -f ~/.zcompdump
+rm -f ~/.zcompdump*
