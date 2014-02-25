@@ -2,4 +2,4 @@ startup_message off
 vbell on
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
 defscrollback 2000
-caption always "%{= wk} %-w%{= KW} [% %t] %{-}%+w %= | @%H | %l | %Y-%m-%d %c "
+caption always "[% %t] %{-}%+w %= | @%H | %l | %Y-%m-%d %c "
