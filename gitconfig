@@ -5,6 +5,11 @@
 [color]
 	ui = auto
 [core]
-	editor = nano
+	editor = sublime_text
 [diff]
 	algorithm = patience
+[mergetool "sublime"]
+	cmd = sublime_text -w $MERGED
+	trustExitCode = false
+[merge]
+	tool = sublime
