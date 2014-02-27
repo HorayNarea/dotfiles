@@ -13,3 +13,5 @@
 	trustExitCode = false
 [merge]
 	tool = sublime
+[mergetool]
+	prompt = false
