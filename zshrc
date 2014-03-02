@@ -1,18 +1,23 @@
+# includes
 . /etc/zsh_command_not_found
+. ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# helpfull aliases
-alias sublime='BROWSER=/usr/bin/x-www-browser sublime_text'
-alias serve='python -m SimpleHTTPServer 8888'
-alias rm='rm -I'
+
+# PATH-Stuff
+PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 
 # many auto-completion, such shell, wow
 fpath=(~/.dotfiles/zsh-completions/src $fpath)
 fpath=(~/.dotfiles/other-completions $fpath)
 
-PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # reload completion on every startup
 autoload -Uz compinit
 compinit
+
+
+# helpfull aliases
+alias serve='python -m SimpleHTTPServer 8888'
+alias rm='rm -I'
