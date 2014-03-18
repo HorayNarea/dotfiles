@@ -11,11 +11,11 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # many auto-completion, such shell, wow
 fpath=(~/.dotfiles/zsh-completions/src $fpath)
 fpath=(~/.dotfiles/other-completions $fpath)
-
+compdef mosh=ssh
 
 # reload completion on every startup
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit
+#compinit
 
 
 # helpfull aliases
