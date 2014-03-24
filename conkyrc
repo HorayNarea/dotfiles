@@ -88,13 +88,6 @@ ${voffset 1}${offset 1}${voffset 2}${color0}${fs_bar 4,18 /}${color}${goto 32}${
 #${color0}${font Poky:size=14}y${font}${color}${goto 32}${voffset -8}${font Ubuntu:size=7,weight:normal}${color}Used: ${fs_used /}
 #${offset 29}${font Ubuntu:size=7,weight:normal}${color}Free: ${fs_free /}
 #############
-${voffset 2}${offset 1}${color0}${font Poky:size=14}y${font}${color}${goto 32}${voffset -7}/home: ${font Ubuntu:style=Bold:size=8}${color1}${fs_used_perc /home}%${color}${font}
-${voffset 1}${offset 1}${voffset 2}${color0}${fs_bar 4,18 /home}${color}${goto 32}${voffset -2}F: ${font Ubuntu:style=Bold:size=8}${color2}${fs_free /home}${color}${font} U: ${font Ubuntu:style=Bold:size=8}${color2}${fs_used /home}${color}${font}
-#############
-#${voffset 4}${offset 27}${font Ubuntu:style=normal:size=8}${color} /home
-#${color0}${font Poky:size=14}y${font}${color}${goto 32}${voffset -8}${font Ubuntu:size=7,weight:normal}${color}Used: ${fs_used /home}
-#${offset 29}${font Ubuntu:size=7,weight:normal}${color}Free: ${fs_free /home}
-#############
 #${offset 122}${diskiograph 8,60 666666 666666}
 #${offset 55}${diskiograph 8,60 666666 666666}
 
