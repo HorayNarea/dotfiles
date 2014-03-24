@@ -5,6 +5,7 @@ HTOP=~/.config/htop/htoprc
 ARIA2=~/.aria2
 ZSH=~/.zshrc
 SCREEN=~/.screenrc
+CONKY=~/.conkyrc
 
 git submodule init
 git submodule update
@@ -27,3 +28,6 @@ rm -f ~/.zcompdump*
 
 mv -f $SCREEN $SCREEN.bak > /dev/null
 ln -s $DOTFILES/screenrc $SCREEN
+
+mv -f $CONKY $CONKY.bak > /dev/null
+ln -s $DOTFILES/conkyrc $CONKY
