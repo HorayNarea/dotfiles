@@ -4,7 +4,7 @@
 
 
 # PATH-Stuff
-PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
+PATH=/usr/pkg/bin:/usr/pkg/sbin:$PATH # Add pkg-src to PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 
