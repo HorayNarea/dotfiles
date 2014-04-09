@@ -12,6 +12,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 fpath=(~/.dotfiles/zsh-completions/src $fpath)
 fpath=(~/.dotfiles/other-completions $fpath)
 compdef mosh=ssh
+compdef ping6=ping
 
 # reload completion on every startup
 #autoload -Uz compinit
