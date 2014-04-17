@@ -14,11 +14,14 @@ fpath=(~/.dotfiles/other-completions $fpath)
 compdef mosh=ssh
 compdef ping6=ping
 
-# reload completion on every startup
-#autoload -Uz compinit
-#compinit
-
 
 # helpfull aliases
 alias serve='python -m SimpleHTTPServer 8888'
 alias rm='rm -I'
+
+
+
+### commented out for faster startup, maybe useful sometimes  ###
+# reload completion on every startup
+#autoload -Uz compinit
+#compinit
