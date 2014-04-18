@@ -18,7 +18,7 @@ compdef ping6=ping
 # helpfull aliases
 alias serve='python -m SimpleHTTPServer 8888'
 alias rm='rm -I'
-
+alias TARDIS='sudo mount -t ufsd UUID=4200D53500D53121 /media/TARDIS -o users,nls=utf8'
 
 
 ### commented out for faster startup, maybe useful sometimes  ###
