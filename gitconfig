@@ -15,3 +15,5 @@
 	tool = sublime
 [mergetool]
 	prompt = false
+[push]
+	default = matching
