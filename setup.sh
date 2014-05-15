@@ -24,7 +24,7 @@ sudo mv -f /etc/zsh /etc/zsh.bak > /dev/null
 sudo cp -r $DOTFILES/zsh /etc/zsh
 
 mv -f $ZSH $ZSH.bak > /dev/null
-ln -s $DOTFILES/zshrc ~/.zshrc
+ln -s $DOTFILES/zshrc $ZSH
 rm -f ~/.zcompdump*
 
 mv -f $SCREEN $SCREEN.bak > /dev/null
