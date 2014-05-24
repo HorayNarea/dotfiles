@@ -1,5 +1,6 @@
 # includes
 . /etc/zsh_command_not_found
+. ~/venv/bin/activate
 . ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # PATH-Stuff
