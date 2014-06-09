@@ -68,7 +68,7 @@ ${alignc}${time %d %B %Y}
 # - SYSTEM - #
 ##############
 ${font Ubuntu:style=Bold:size=8}SYSTEM $stippled_hr${font}
-${color0}${font Poky:size=14}S${font}${color}${goto 32}${voffset -8}Kernel:  ${alignr}${color2}${kernel}${color}
+${color0}${font Poky:size=14}S${font}${color}${goto 32}${voffset -8}Kernel: ${alignr}${color2}${kernel}${color}
 ${goto 32}Uptime: ${alignr}${color2}${uptime}${color}
 # |--CPU
 ${voffset 2}${offset 2}${color0}${font Poky:size=14}P${font}${offset -19}${voffset 9}${offset 1}${cpubar cpu0 4,18}${color}${voffset -16}${goto 32}CPU1: ${font Ubuntu:style=Bold:size=8}${color1}${cpu cpu1}%${color}${font} ${alignr}${color2}${cpugraph cpu1 8,60 ${color1} ${color3}}${color}
@@ -86,13 +86,6 @@ ${voffset 1}${offset 1}${voffset 2}${color0}${swapbar 4,18}${color}${goto 32}${v
 ${voffset 4}${font Ubuntu:style=Bold:size=8}HDD $stippled_hr${font}
 ${voffset 2}${offset 1}${color0}${font Poky:size=14}y${font}${color}${goto 32}${voffset -7}/: ${font Ubuntu:style=Bold:size=8}${color1}${fs_used_perc /}%${color}${font}
 ${voffset 1}${offset 1}${voffset 2}${color0}${fs_bar 4,18 /}${color}${goto 32}${voffset -2}F: ${font Ubuntu:style=Bold:size=8}${color2}${fs_free /}${color}${font} U: ${font Ubuntu:style=Bold:size=8}${color2}${fs_used /}${color}${font}
-#############
-#${offset 27}${font Ubuntu:style=normal:size=8}${color} /
-#${color0}${font Poky:size=14}y${font}${color}${goto 32}${voffset -8}${font Ubuntu:size=7,weight:normal}${color}Used: ${fs_used /}
-#${offset 29}${font Ubuntu:size=7,weight:normal}${color}Free: ${fs_free /}
-#############
-#${offset 122}${diskiograph 8,60 666666 666666}
-#${offset 55}${diskiograph 8,60 666666 666666}
 
 ###############
 # - NETWORK - #
