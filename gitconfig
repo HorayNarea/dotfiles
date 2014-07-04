@@ -6,6 +6,8 @@
 	ui = auto
 [core]
 	editor = sublime_text
+	compression = 9
+	loosecompression = 9
 [diff]
 	algorithm = patience
 [mergetool "sublime"]
@@ -17,3 +19,5 @@
 	prompt = false
 [push]
 	default = matching
+[pack]
+	compression = 9
