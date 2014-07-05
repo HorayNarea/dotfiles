@@ -23,6 +23,12 @@ alias TARDIS='sudo mkdir -p /media/TARDIS && sudo mount -t ufsd UUID=4200D53500D
 alias uTARDIS='sudo umount /media/TARDIS && sudo rmdir /media/TARDIS'
 
 
+function weggucken {
+	vlc $1 >/dev/null 2>/dev/null
+	rm -v $1
+}
+
+
 ### commented out for faster startup, maybe useful sometimes  ###
 # reload completion on every startup
 #autoload -Uz compinit
