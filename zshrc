@@ -1,7 +1,6 @@
 # includes
-. /etc/zsh_command_not_found
-. ~/.venv/bin/activate
-. ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /etc/zsh_command_not_found
+source ~/.venv/bin/activate
 
 # PATH-Stuff
 PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
@@ -33,3 +32,7 @@ function weggucken {
 # reload completion on every startup
 #autoload -Uz compinit
 #compinit
+
+# Syntax-Highlighting
+source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
