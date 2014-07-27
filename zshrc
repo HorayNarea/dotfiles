@@ -22,7 +22,7 @@ alias uTARDIS='sudo umount /media/TARDIS && sudo rmdir /media/TARDIS'
 function weggucken {
 	for item in $*; do
 		vlc --rate 1.23 $item vlc://quit >/dev/null 2>/dev/null
-		rm -i -v $item
+		rm -i -r -v $item
 	done
 }
 
