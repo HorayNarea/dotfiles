@@ -2,6 +2,11 @@
 source /etc/zsh_command_not_found
 source ~/.venv/bin/activate
 
+# prompt
+autoload -Uz promptinit
+promptinit
+prompt grml-large
+
 # PATH-Stuff
 PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
@@ -25,11 +30,6 @@ function weggucken {
 		rm -i -r -v $item
 	done
 }
-
-### commented out for faster startup, maybe useful sometimes  ###
-# reload completion on every startup
-#autoload -Uz compinit
-#compinit
 
 # Syntax-Highlighting
 source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
