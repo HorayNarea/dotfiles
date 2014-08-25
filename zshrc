@@ -31,6 +31,14 @@ function weggucken {
 	done
 }
 
+# compilerfoo
+export CC=clang
+export CXX=clang++
+export CPP="clang -E"
+export CXXCPP="clang++ -E"
+export CFLAGS="-pipe -O3 -march=native -mtune=native"
+export CXXFLAGS=$CFLAGS
+
 # Syntax-Highlighting
 source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
