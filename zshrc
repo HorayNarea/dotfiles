@@ -21,8 +21,6 @@ compdef ping6=ping
 alias diff='colordiff'
 alias serve='python -m SimpleHTTPServer 8888'
 alias rm='rm -I'
-alias TARDIS='sudo mkdir -p /media/TARDIS && sudo mount -t ufsd UUID=4200D53500D53121 /media/TARDIS -o users,nls=utf8,uid=1000,gid=1000'
-alias uTARDIS='sudo umount /media/TARDIS && sudo rmdir /media/TARDIS'
 
 function weggucken {
 	for item in $*; do
