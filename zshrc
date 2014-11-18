@@ -29,7 +29,7 @@ function weggucken {
 	done
 }
 
-# compilerfoo
+# environment
 export CC=clang
 export CXX=clang++
 export CPP="clang -E"
@@ -37,6 +37,7 @@ export CXXCPP="clang++ -E"
 export CFLAGS="-pipe -O3 -march=native -mtune=native"
 export CXXFLAGS=$CFLAGS
 export EDITOR=nano
+export GOPATH=/opt/Dinge/Code/go
 
 # Syntax-Highlighting
 source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
