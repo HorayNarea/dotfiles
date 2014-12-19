@@ -8,6 +8,8 @@
 	editor = sublime_text
 	compression = 9
 	loosecompression = 9
+[apply]
+	whitespace = fix
 [diff]
 	algorithm = patience
 [mergetool "sublime"]
