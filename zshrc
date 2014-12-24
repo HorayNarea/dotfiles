@@ -24,7 +24,7 @@ alias rm='rm -I'
 
 function weggucken {
 	for item in $*; do
-		vlc --rate 1.23 --scale 0.5 $item vlc://quit >/dev/null 2>/dev/null
+		vlc --rate 1.25 --scale 0.5 $item vlc://quit >/dev/null 2>/dev/null
 		rm -i -r -v $item
 	done
 }
