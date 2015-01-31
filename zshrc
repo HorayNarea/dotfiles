@@ -8,8 +8,11 @@ promptinit
 prompt grml-large
 
 # PATH-Stuff
-PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
+export PATH=$PATH:/usr/pkg/bin:/usr/pkg/sbin # Add pkg-src to PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.linuxbrew/bin:$PATH" # add homebrew for linux
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 # many auto-completion, such shell, wow
 fpath=(~/.dotfiles/zsh-completions/src $fpath)
