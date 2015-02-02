@@ -19,6 +19,8 @@ fpath=(~/.dotfiles/other-completions $fpath)
 fpath=(~/.linuxbrew/Library/Contributions/brew_zsh_completion.zsh $fpath)
 compdef mosh=ssh
 compdef ping6=ping
+autoload -U compinit
+compinit
 
 # helpfull aliases
 alias diff='colordiff'
