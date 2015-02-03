@@ -22,6 +22,10 @@ compdef ping6=ping
 autoload -U compinit
 compinit
 
+# For sudo-ing aliases
+# https://wiki.archlinux.org/index.php/Sudo#Passing_aliases
+alias sudo='sudo '
+
 # helpfull aliases
 alias diff='colordiff'
 alias serve='python -m SimpleHTTPServer 8888'
@@ -35,12 +39,6 @@ function weggucken {
 }
 
 # environment
-export CC=clang
-export CXX=clang++
-export CPP="clang -E"
-export CXXCPP="clang++ -E"
-export CFLAGS="-pipe -O3 -march=native -mtune=native"
-export CXXFLAGS=$CFLAGS
 export EDITOR=nano
 export GOPATH=/opt/Dinge/Code/go
 
