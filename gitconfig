@@ -20,6 +20,6 @@
 [mergetool]
 	prompt = false
 [push]
-	default = matching
+	default = simple
 [pack]
 	compression = 9
