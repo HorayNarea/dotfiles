@@ -26,9 +26,16 @@ compinit
 alias sudo='sudo '
 
 # helpfull aliases
-alias diff='colordiff'
 alias serve='python -m SimpleHTTPServer 8888'
 alias rm='rm -I'
+
+# Use Git’s colored diff when available
+hash git &>/dev/null;
+if [ $? -eq 0 ]; then
+	function diff() {
+		git diff --no-index "$@";
+	}
+fi;
 
 function weggucken {
 	for item in $*; do
