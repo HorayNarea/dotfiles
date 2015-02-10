@@ -29,8 +29,13 @@ alias sudo='sudo '
 alias serve='python -m SimpleHTTPServer 8888'
 alias rm='rm -I'
 alias dig='drill'
+alias ls='ls -b -FC --color=yes'
+alias l='ls -l'
+alias la='l -A'
+alias less='less -FRX'
+alias tree='tree -CF --dirsfirst'
 
-# Use Git’s colored diff when available
+# Use Git's colored diff when available
 hash git &>/dev/null;
 if [ $? -eq 0 ]; then
 	function diff() {
@@ -46,6 +51,10 @@ function json() {
 	else # pipe
 		python -mjson.tool | pygmentize -l javascript;
 	fi;
+}
+
+function tre() {
+	tree -a -I '.git|node_modules|bower_components' "$@" | less;
 }
 
 function weggucken {
