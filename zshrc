@@ -28,6 +28,7 @@ alias sudo='sudo '
 # helpfull aliases
 alias serve='python -m SimpleHTTPServer 8888'
 alias rm='rm -I'
+alias dig='drill'
 
 # Use Git’s colored diff when available
 hash git &>/dev/null;
