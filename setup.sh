@@ -2,7 +2,7 @@
 DOTFILES=~/.dotfiles
 GIT=~/.gitconfig
 HTOP=~/.config/htop/htoprc
-ARIA2=~/.aria2
+ARIA2=~/.aria2/aria2.conf
 ZSH=~/.zshrc
 SCREEN=~/.screenrc
 CONKY=~/.conkyrc
@@ -18,7 +18,7 @@ mv -f $HTOP $HTOP.bak > /dev/null
 ln -fs $DOTFILES/htoprc $HTOP
 
 mv $ARIA2 $ARIA2.bak > /dev/null
-ln -fs $DOTFILES/aria2 $ARIA2
+ln -fs $DOTFILES/aria2.conf $ARIA2
 
 sudo mv -f /etc/zsh /etc/zsh.bak > /dev/null
 sudo cp -r $DOTFILES/zsh /etc/zsh
