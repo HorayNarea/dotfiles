@@ -3,11 +3,12 @@
 	name = Thomas Sänger
 	signingkey = 0xA09EAC53B3A8080F
 [color]
-	ui = auto
+	ui = true
 [core]
 	editor = sublime_text
 	compression = 9
 	loosecompression = 9
+	autocrlf = input
 [apply]
 	whitespace = fix
 [diff]
@@ -23,3 +24,7 @@
 	default = simple
 [pack]
 	compression = 9
+[branch]
+	autosetuprebase = always
+[help]
+	autocorrect = true
