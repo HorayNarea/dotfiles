@@ -7,3 +7,5 @@ do
 	mv -vf ~/.${f} ~/.${f}.bak
 	ln -vfs ~/.dotfiles/$(basename ${f}) ~/.${f}
 done
+
+mkdir ~/.zsh

@@ -13,4 +13,5 @@ setopt extendedhistory
 setopt auto_cd
 setopt prompt_subst
 
+ZSH_CACHE_DIR=~/.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
