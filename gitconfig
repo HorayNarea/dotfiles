@@ -12,7 +12,7 @@
 [apply]
 	whitespace = fix
 [diff]
-	algorithm = patience
+	algorithm = minimal
 [mergetool "sublime"]
 	cmd = sublime_text -w $MERGED
 	trustExitCode = false
@@ -30,3 +30,4 @@
 	autocorrect = 20
 [commit]
 	template = /home/horaynarea/.dotfiles/gitmessage
+	gpgsign = true
