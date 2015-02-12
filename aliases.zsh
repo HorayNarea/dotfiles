@@ -14,7 +14,7 @@ unset PyVer
 #
 alias rm='rm -I'
 alias dig='drill'
-alias ls='\ls -b -FC --color=yes'
+alias ls='\ls -bh -FC --color=yes'
 alias l='ls -l'
 alias la='l -A'
 alias less='less -FRX'
