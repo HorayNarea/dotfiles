@@ -25,6 +25,7 @@ alias ag='apt-fast upgrade'
 alias adg='apt-fast dist-upgrade'
 alias acs='apt-cache search'
 alias acsh='apt-cache show'
+alias agi='apt-fast install'
 
 # others
 alias dig='drill'
