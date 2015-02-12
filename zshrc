@@ -1,47 +1,67 @@
-# includes
+##### includes
 source ~/.venv/bin/activate
+source ~/.dotfiles/antigen/antigen.zsh
 
-# prompt
-autoload -Uz promptinit
-promptinit
-prompt grml-large
 
-# PATH-Stuff
+##### antigen
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# load many bundles
+antigen bundles << EOBUNDLES
+	brew
+	colored-man
+	command-not-found
+	debian
+	gem
+	git
+	pip
+	screen
+
+	zsh-users/zsh-completions
+	zsh-users/zsh-syntax-highlighting
+	zsh-users/zsh-history-substring-search
+EOBUNDLES
+
+# theming
+#antigen theme
+
+antigen apply
+
+
+##### environment
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/sbin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+export GOPATH=/opt/Dinge/Code/go
+export EDITOR=nano
 
-# many auto-completion, such shell, wow
-fpath=(~/.dotfiles/zsh-completions/src $fpath)
-fpath=(~/.dotfiles/other-completions $fpath)
-fpath=(~/.linuxbrew/Library/Contributions/brew_zsh_completion.zsh $fpath)
-compdef mosh=ssh
-compdef ping6=ping
-autoload -U compinit
-compinit
 
-# For sudo-ing aliases
-# https://wiki.archlinux.org/index.php/Sudo#Passing_aliases
-alias sudo='sudo '
+##### zsh config
+# default bindings for zsh-users/zsh-history-substring-search
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
-# helpfull aliases
-alias serve='python -m SimpleHTTPServer 8888'
-alias rm='rm -I'
-alias dig='drill'
-alias ls='ls -b -FC --color=yes'
-alias l='ls -l'
-alias la='l -A'
-alias less='less -FRX'
-alias tree='tree -CF --dirsfirst'
+# For historical purposes
+HISTFILE=~/.zsh_history
+HISTSIZE=SAVEHIST=10000
+setopt histignorealldups
+setopt sharehistory
+setopt extendedhistory
 
-# Use Git's colored diff when available
-hash git &>/dev/null;
-if [ $? -eq 0 ]; then
-	function diff() {
-		git diff --no-index "$@";
-	}
-fi;
+setopt auto_cd
+setopt prompt_subst
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+
+
+##### functions
+# Use Git's colored diff
+function diff() {
+	git diff --no-index "$@";
+}
 
 # Syntax-highlight & pretty-print JSON strings or files
 # Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
@@ -64,10 +84,24 @@ function weggucken {
 	done
 }
 
-# environment
-export EDITOR=nano
-export GOPATH=/opt/Dinge/Code/go
 
-# Syntax-Highlighting
-source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+##### aliases
+# For sudo-ing aliases
+# https://wiki.archlinux.org/index.php/Sudo#Passing_aliases
+alias sudo='sudo '
+
+PyVer=$(python -c "import sys;print(sys.version_info.major)")
+if [[ $PyVer == 2 ]]; then
+	alias serve='python -m SimpleHTTPServer 8080'
+elif [[ $PyVer == 3 ]]; then
+	alias serve='python -m http.server 8080'
+fi
+unset PyVer
+
+alias rm='rm -I'
+alias dig='drill'
+alias ls='\ls -b -FC --color=yes'
+alias l='ls -l'
+alias la='l -A'
+alias less='less -FRX'
+alias tree='tree -CF --dirsfirst'
