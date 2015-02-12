@@ -8,7 +8,7 @@ antigen bundles << EOBUNDLES
 	colored-man
 	command-not-found
 	gem
-	gitfast
+	git
 	gitignore
 	golang
 	mosh
