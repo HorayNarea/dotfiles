@@ -11,11 +11,20 @@ elif [[ $PyVer == 3 ]]; then
 fi
 unset PyVer
 
-#
+# basic utils
 alias rm='rm -I'
-alias dig='drill'
 alias ls='\ls -bh -FC --color=yes'
 alias l='ls -l'
 alias la='l -A'
 alias less='less -FRX'
 alias tree='tree -CF --dirsfirst'
+
+# deb-specific
+alias au='apt-fast update'
+alias ag='apt-fast upgrade'
+alias adg='apt-fast dist-upgrade'
+alias acs='apt-cache search'
+alias acsh='apt-cache show'
+
+# others
+alias dig='drill'
