@@ -8,5 +8,4 @@ do
 	ln -vfs ~/.dotfiles/$(basename ${f}) ~/.${f}
 done
 
-#sudo mv -f /etc/zsh /etc/zsh.bak > /dev/null
-#sudo cp -r ~/.dotfiles/zsh /etc/zsh
+mkdir ~/.zsh
