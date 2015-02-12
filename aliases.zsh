@@ -29,3 +29,4 @@ alias agi='apt-fast install'
 
 # others
 alias dig='drill'
+alias su='sudo zsh'
