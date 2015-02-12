@@ -2,4 +2,5 @@ startup_message off
 vbell on
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
 defscrollback 2000
-caption always "[% %t] %{-}%+w %= | @%H | %l | %Y-%m-%d %c "
+
+caption always '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
