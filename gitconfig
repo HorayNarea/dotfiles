@@ -27,6 +27,6 @@
 [branch]
 	autosetuprebase = always
 [help]
-	autocorrect = true
+	autocorrect = 20
 [commit]
 	template = /home/horaynarea/.dotfiles/gitmessage
