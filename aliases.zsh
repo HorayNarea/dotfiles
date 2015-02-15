@@ -13,7 +13,7 @@ unset PyVer
 
 # basic utils
 alias rm='rm -I'
-alias ls='\ls -bh -FC --color=yes'
+alias ls='\ls -bh -FC --group-directories-first --color=yes'
 alias l='ls -l'
 alias la='l -A'
 alias less='less -FRX'
