@@ -17,3 +17,6 @@ export EDITOR=nano
 source ~/.dotfiles/aliases.zsh
 source ~/.dotfiles/functions.zsh
 source ~/.dotfiles/config.zsh
+if [[ -f ~/.zshrc.local ]]; then
+	source ~/.zshrc.local
+fi
