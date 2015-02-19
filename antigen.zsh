@@ -9,6 +9,7 @@ antigen bundles << EOBUNDLES
 	command-not-found
 	gem
 	git
+	git-extras
 	gitignore
 	golang
 	mosh
