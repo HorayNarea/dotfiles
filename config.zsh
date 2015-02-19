@@ -13,6 +13,7 @@ setopt histignorealldups
 setopt sharehistory
 setopt extendedhistory
 
+setopt interactivecomments
 setopt auto_cd
 setopt prompt_subst
 
