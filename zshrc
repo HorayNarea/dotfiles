@@ -14,6 +14,6 @@ export EDITOR=nano
 
 
 ##### customization
-source ~/.dotfiles/config.zsh
 source ~/.dotfiles/aliases.zsh
 source ~/.dotfiles/functions.zsh
+source ~/.dotfiles/config.zsh
