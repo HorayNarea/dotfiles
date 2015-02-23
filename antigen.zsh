@@ -12,6 +12,7 @@ antigen bundles << EOBUNDLES
 	git-extras
 	gitignore
 	golang
+	httpie
 	mosh
 	npm
 	pip
