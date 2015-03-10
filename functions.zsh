@@ -17,14 +17,14 @@ function tre() {
 	tree -a -I '.git|node_modules|bower_components' "$@" | less;
 }
 
-function weggucken {
+function weggucken() {
 	for item in $*; do
 		vlc --rate 1.25 --scale 0.5 $item vlc://quit >/dev/null 2>/dev/null
 		rm -i -v $item
 	done
 }
 
-fancy-ctrl-z () {
+function fancy-ctrl-z () {
 	if [[ $#BUFFER -eq 0 ]]; then
 		BUFFER="fg"
 		zle accept-line
