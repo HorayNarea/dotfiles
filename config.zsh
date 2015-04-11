@@ -12,6 +12,7 @@ HISTSIZE=SAVEHIST=10000
 setopt histignorealldups
 setopt sharehistory
 setopt extendedhistory
+setopt histignorespace
 
 setopt correct
 setopt interactivecomments
