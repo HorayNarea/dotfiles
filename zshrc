@@ -7,27 +7,27 @@ if ! zgen saved; then
 	zgen oh-my-zsh
 
 	# load many plugins
-	zgen load adb
-	zgen load brew
-	zgen load colored-man
-	zgen load command-not-found
-	zgen load gem
-	zgen load git
-	zgen load git-extras
-	zgen load gitignore
-	zgen load golang
-	zgen load httpie
-	zgen load mosh
-	zgen load npm
-	zgen load pip
-	zgen load python
+	zgen oh-my-zsh plugins/adb
+	zgen oh-my-zsh plugins/brew
+	zgen oh-my-zsh plugins/colored-man
+	zgen oh-my-zsh plugins/command-not-found
+	zgen oh-my-zsh plugins/gem
+	zgen oh-my-zsh plugins/git
+	zgen oh-my-zsh plugins/git-extras
+	zgen oh-my-zsh plugins/gitignore
+	zgen oh-my-zsh plugins/golang
+	zgen oh-my-zsh plugins/httpie
+	zgen oh-my-zsh plugins/mosh
+	zgen oh-my-zsh plugins/npm
+	zgen oh-my-zsh plugins/pip
+	zgen oh-my-zsh plugins/python
+	zgen oh-my-zsh plugins/screen
+	zgen oh-my-zsh plugins/sublime
+	zgen oh-my-zsh plugins/sudo
+	zgen oh-my-zsh plugins/zsh_reload
 	zgen load robertzk/send.zsh
-	zgen load screen
-	zgen load sublime
-	zgen load sudo
 	zgen load Tarrasch/zsh-mcd
-	zgen load zsh_reload
-	zgen load zsh-users/zsh-completions src
+	zgen load zsh-users/zsh-completions	src
 	zgen load zsh-users/zsh-syntax-highlighting
 	zgen load zsh-users/zsh-history-substring-search
 
