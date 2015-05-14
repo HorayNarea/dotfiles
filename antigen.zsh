@@ -17,11 +17,13 @@ antigen bundles << EOBUNDLES
 	npm
 	pip
 	python
+	robertzk/send.zsh
 	screen
 	sublime
 	sudo
+	Tarrasch/zsh-mcd
 	zsh_reload
-	zsh-users/zsh-completions
+	zsh-users/zsh-completions src
 	zsh-users/zsh-syntax-highlighting
 	zsh-users/zsh-history-substring-search
 EOBUNDLES
