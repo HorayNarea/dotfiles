@@ -1,6 +1,4 @@
 #!/bin/sh
-git submodule init
-git submodule update
 
 git clone https://github.com/tarjoilija/zgen ~/.dotfiles/zgen
 
