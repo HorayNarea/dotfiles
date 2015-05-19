@@ -2,10 +2,11 @@
 
 git clone https://github.com/tarjoilija/zgen ~/.dotfiles/zgen
 
-for f in gitconfig zshrc screenrc conkyrc config/htop/htoprc aria2/aria2.conf
-do
-	mv -vf ~/.${f} ~/.${f}.bak
-	ln -vfs ~/.dotfiles/$(basename ${f}) ~/.${f}
+for source in gitconfig zshrc screenrc conkyrc config_htop_htoprc aria2_aria2.conf ssh_config; do
+	for target in $(echo ${source}|tr "_" "/"); do
+		mv -vf ~/.${target} ~/.${target}.bak
+		ln -vfs ~/.dotfiles/${source} ~/.${target}
+	done
 done
 
 mkdir ~/.zsh
