@@ -24,7 +24,7 @@ function weggucken() {
 	done
 }
 
-function fancy-ctrl-z () {
+function fancy-ctrl-z() {
 	if [[ $#BUFFER -eq 0 ]]; then
 		BUFFER="fg"
 		zle accept-line

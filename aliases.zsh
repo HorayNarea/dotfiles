@@ -24,9 +24,9 @@ alias tree='tree -CF --dirsfirst'
 alias au='sudo apt-get update'
 alias ag='sudo apt-get upgrade'
 alias adg='sudo apt-get dist-upgrade'
+alias agi='sudo apt-get install'
 alias acs='apt-cache search'
 alias acsh='apt-cache show'
-alias agi='sudo apt-get install'
 
 # others
 alias dig='drill'
