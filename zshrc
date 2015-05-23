@@ -44,9 +44,9 @@ export EDITOR=nano
 
 
 ##### customization
-source ~/.dotfiles/aliases.zsh
-source ~/.dotfiles/functions.zsh
-source ~/.dotfiles/config.zsh
+source ~/.dotfiles/includes/aliases
+source ~/.dotfiles/includes/functions
+source ~/.dotfiles/includes/config
 if [[ -f ~/.zshrc.local ]]; then
 	source ~/.zshrc.local
 fi
