@@ -16,6 +16,7 @@ alias rm='rm -I'
 alias ls='\ls -bh -FC --group-directories-first --color=yes'
 alias l='ls -l'
 alias la='l -a'
+alias lsa='ls -A'
 alias less='less -FRX'
 alias tree='tree -CF --dirsfirst'
 
