@@ -30,4 +30,4 @@ alias agi='sudo apt-get install'
 
 # others
 alias dig='drill'
-alias su='sudo zsh'
+alias su='sudo su'
