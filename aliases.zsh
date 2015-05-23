@@ -20,13 +20,13 @@ alias lsa='ls -A'
 alias less='less -FRX'
 alias tree='tree -CF --dirsfirst'
 
-# deb-specific
-alias au='apt-fast update'
-alias ag='apt-fast upgrade'
-alias adg='apt-fast dist-upgrade'
+# debian specific
+alias au='sudo apt-get update'
+alias ag='sudo apt-get upgrade'
+alias adg='sudo apt-get dist-upgrade'
 alias acs='apt-cache search'
 alias acsh='apt-cache show'
-alias agi='apt-fast install'
+alias agi='sudo apt-get install'
 
 # others
 alias dig='drill'
