@@ -3,13 +3,7 @@
 alias sudo='sudo '
 
 # simple webserver for testing
-PyVer=$(python -c "import sys;print(sys.version_info.major)")
-if [[ $PyVer == 2 ]]; then
-	alias serve='python -m SimpleHTTPServer 8080'
-elif [[ $PyVer == 3 ]]; then
-	alias serve='python -m http.server 8080'
-fi
-unset PyVer
+alias serve='python3 -m http.server'
 
 # basic utils
 alias rm='rm -I'
@@ -31,3 +25,4 @@ alias acsh='apt-cache show'
 # others
 alias dig='drill'
 alias su='sudo su'
+alias python=python3
