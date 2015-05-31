@@ -25,4 +25,3 @@ alias acsh='apt-cache show'
 # others
 alias dig='drill'
 alias su='sudo su'
-alias python=python3
