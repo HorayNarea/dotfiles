@@ -1,0 +1,6 @@
+zgen oh-my-zsh plugins/adb
+zgen oh-my-zsh plugins/command-not-found
+zgen oh-my-zsh plugins/golang
+zgen oh-my-zsh plugins/colorize
+zgen load srijanshetty/zsh-pandoc-completion
+zgen load t413/zsh-background-notify
