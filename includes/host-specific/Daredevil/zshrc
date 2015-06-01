@@ -1,5 +1,26 @@
+# simple webserver for testing
+alias serve='python3 -m http.server'
+
+# debian specific
+alias au='sudo apt-get update'
+alias ag='sudo apt-get upgrade'
+alias adg='sudo apt-get dist-upgrade'
+alias agi='sudo apt-get install'
+alias acs='apt-cache search'
+alias acsh='apt-cache show'
+
 alias TARDIS='sudo mkdir -p /media/TARDIS && sudo mount -t ufsd UUID=7020BFDE2863E7CC /media/TARDIS -o users,nls=utf8,uid=1000,gid=1000'
 alias uTARDIS='sudo umount /media/TARDIS && sudo rmdir /media/TARDIS'
+
+# Syntax-highlight & pretty-print JSON strings or files
+# Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
+function json() {
+	if [ -t 0 ]; then # argument
+		python -mjson.tool <<< "$*" | pygmentize -l javascript;
+	else # pipe
+		python -mjson.tool | pygmentize -l javascript;
+	fi;
+}
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export PATH="$HOME/.linuxbrew/sbin:$PATH"
