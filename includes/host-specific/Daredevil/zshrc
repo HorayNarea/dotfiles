@@ -1,6 +1,3 @@
-# simple webserver for testing
-alias serve='python3 -m http.server'
-
 # debian specific
 alias au='sudo apt-get update'
 alias ag='sudo apt-get upgrade'
