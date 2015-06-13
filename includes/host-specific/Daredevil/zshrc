@@ -16,6 +16,13 @@ function json() {
 	fi;
 }
 
+function weggucken() {
+	for item in $*; do
+		vlc --rate 1.25 --scale 0.5 $item vlc://quit >/dev/null 2>/dev/null
+		rm -i -v $item
+	done
+}
+
 export PATH="$HOME/bin:$PATH"
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
