@@ -3,3 +3,5 @@ zgen oh-my-zsh plugins/golang
 zgen oh-my-zsh plugins/colorize
 zgen load srijanshetty/zsh-pandoc-completion
 zgen load t413/zsh-background-notify
+
+zgen oh-my-zsh themes/agnoster
