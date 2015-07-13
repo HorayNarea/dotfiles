@@ -9,7 +9,6 @@ Host *
 
 	ConnectTimeout 30
 	ServerAliveInterval 10
-	UpdateHostkeys yes
 	Compression yes
 
 Host liquid-erfurt.org openjabber.tk server01.georg-krause.net server02.georg-krause.net
