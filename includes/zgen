@@ -1,19 +1,20 @@
-# Load the oh-my-zsh's library.
-zgen oh-my-zsh
+zgen loadall <<EOPLUGINS
+	# Load the oh-my-zsh's library.
+	robbyrussell/oh-my-zsh
 
-# load many plugins
-zgen oh-my-zsh plugins/brew
-zgen oh-my-zsh plugins/colored-man
-zgen oh-my-zsh plugins/httpie
-zgen oh-my-zsh plugins/mosh
-zgen oh-my-zsh plugins/npm
-zgen oh-my-zsh plugins/pip
-zgen oh-my-zsh plugins/screen
-zgen oh-my-zsh plugins/sublime
-zgen oh-my-zsh plugins/sudo
-zgen oh-my-zsh plugins/zsh_reload
-zgen load robertzk/send.zsh
-zgen load Tarrasch/zsh-mcd
-zgen load zsh-users/zsh-completions src
-zgen load zsh-users/zsh-syntax-highlighting
-zgen load zsh-users/zsh-history-substring-search
+	# load many plugins
+	robbyrussell/oh-my-zsh plugins/colored-man
+	robbyrussell/oh-my-zsh plugins/httpie
+	robbyrussell/oh-my-zsh plugins/mosh
+	robbyrussell/oh-my-zsh plugins/npm
+	robbyrussell/oh-my-zsh plugins/pip
+	robbyrussell/oh-my-zsh plugins/screen
+	robbyrussell/oh-my-zsh plugins/sublime
+	robbyrussell/oh-my-zsh plugins/sudo
+	robbyrussell/oh-my-zsh plugins/zsh_reload
+	robertzk/send.zsh
+	Tarrasch/zsh-mcd
+	zsh-users/zsh-completions src
+	zsh-users/zsh-syntax-highlighting
+	zsh-users/zsh-history-substring-search
+EOPLUGINS

@@ -1,7 +1,9 @@
-zgen oh-my-zsh plugins/command-not-found
-zgen oh-my-zsh plugins/golang
-zgen oh-my-zsh plugins/colorize
-zgen load srijanshetty/zsh-pandoc-completion
-zgen load t413/zsh-background-notify
+zgen loadall <<EOPLUGINS
+	robbyrussell/oh-my-zsh plugins/command-not-found
+	robbyrussell/oh-my-zsh plugins/golang
+	robbyrussell/oh-my-zsh plugins/colorize
+	srijanshetty/zsh-pandoc-completion
+	t413/zsh-background-notify
 
-zgen oh-my-zsh themes/agnoster
+	robbyrussell/oh-my-zsh themes/agnoster
+EOPLUGINS
