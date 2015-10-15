@@ -3,7 +3,7 @@ zgen loadall <<EOPLUGINS
 	robbyrussell/oh-my-zsh
 
 	# load many plugins
-	robbyrussell/oh-my-zsh plugins/colored-man
+	robbyrussell/oh-my-zsh plugins/colored-man-pages
 	robbyrussell/oh-my-zsh plugins/httpie
 	robbyrussell/oh-my-zsh plugins/mosh
 	robbyrussell/oh-my-zsh plugins/npm
