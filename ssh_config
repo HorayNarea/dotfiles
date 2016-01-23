@@ -14,5 +14,5 @@ Host *
 	ServerAliveInterval 10
 	Compression yes
 
-Host liquid-erfurt.org openjabber.tk server01.georg-krause.net server02.georg-krause.net
+Host liquid-erfurt.org openjabber.tk server01.georg-krause.net
 	User thomas
