@@ -23,6 +23,12 @@ function weggucken() {
 	done
 }
 
+function goclone() {
+	p=$(echo $1|sed 's,https://,,'|sed 's,http://,,'|sed 's,git://,,')
+	git clone $1 $p
+}
+
+
 export PATH="$HOME/bin:$PATH"
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
@@ -32,3 +38,5 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export GOPATH=/opt/Dinge/Code/go
 export PATH=$GOPATH/bin:$PATH
+
+export HOMEBREW_BUILD_FROM_SOURCE=1
