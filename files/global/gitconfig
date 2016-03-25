@@ -29,5 +29,5 @@
 [help]
 	autocorrect = 20
 [commit]
-	template = ~/.dotfiles/gitmessage
+	template = ~/.dotfiles/files/gitmessage
 	gpgsign = true
