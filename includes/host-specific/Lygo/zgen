@@ -1,10 +1,19 @@
 zgen loadall <<EOPLUGINS
+	# OMZ plugins
 	robbyrussell/oh-my-zsh plugins/brew
+	robbyrussell/oh-my-zsh plugins/colorize
 	robbyrussell/oh-my-zsh plugins/command-not-found
 	robbyrussell/oh-my-zsh plugins/golang
-	robbyrussell/oh-my-zsh plugins/colorize
+	robbyrussell/oh-my-zsh plugins/httpie
+	robbyrussell/oh-my-zsh plugins/npm
+	robbyrussell/oh-my-zsh plugins/pip
+	robbyrussell/oh-my-zsh plugins/sublime
+
+	# 3rd-party plugins
+	robertzk/send.zsh
 	srijanshetty/zsh-pandoc-completion
 	t413/zsh-background-notify
 
+	# theme
 	robbyrussell/oh-my-zsh themes/agnoster
 EOPLUGINS
