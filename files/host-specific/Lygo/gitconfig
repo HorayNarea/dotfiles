@@ -1,9 +1,11 @@
 [user]
 	email = HorayNarea@gmail.com
 	name = Thomas Sänger
+	signingkey = 0xA09EAC53B3A8080F
 [color]
 	ui = true
 [core]
+	editor = sublime-text
 	compression = 9
 	loosecompression = 9
 	autocrlf = input
@@ -11,6 +13,13 @@
 	whitespace = fix
 [diff]
 	algorithm = minimal
+[mergetool "sublime"]
+	cmd = sublime-text -w $MERGED
+	trustExitCode = false
+[merge]
+	tool = sublime
+[mergetool]
+	prompt = false
 [push]
 	default = simple
 [pack]
@@ -21,3 +30,4 @@
 	autocorrect = 20
 [commit]
 	template = ~/.dotfiles/files/gitmessage
+	gpgsign = true
