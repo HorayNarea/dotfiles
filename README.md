@@ -18,3 +18,5 @@ cd ~/.dotfiles
 * mosh
 * tree
 * ldns
+* htop
+* screen
