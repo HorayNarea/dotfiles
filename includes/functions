@@ -4,7 +4,7 @@ function diff() {
 }
 
 function tre() {
-	tree -a -I '.git|node_modules|bower_components' "$@" | less;
+	tree -a -I '.git|.hg|.bzr|.svn|CVS|node_modules' "$@" | less;
 }
 
 function fancy-ctrl-z() {
