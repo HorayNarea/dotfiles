@@ -16,3 +16,6 @@ Host *
 
 Host liquid-erfurt.org openjabber.tk server01.georg-krause.net
 	User thomas
+
+Host mail.gecko.space
+	User gecko1
