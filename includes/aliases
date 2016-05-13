@@ -4,11 +4,23 @@ alias sudo='sudo '
 
 # basic utils
 alias rm='rm -I'
+
+# as much as i don't like the whole GNU-ecosystem, ls from GNU Coreutils is more useful (to me!)
+# so we try to use it first and fallback to BSD-ls if on a BSD without GNU-ls
 if ls --color -d . >/dev/null 2>&1; then
+	# we're on some sort of linux(-userland… looking at you UbuntuBSD/ArchBSD/Linux on Windows 10!)
 	alias ls='\ls -bh -FC --group-directories-first --color'
-else
+elif gnuls >/dev/null 2>&1; then
+	# living a GNU-life in a BSD-world
 	alias ls='\gnuls -bh -FC --group-directories-first --color'
+else
+	# just plain old BSD
+	# (hopefully not OpenBSD or -G does nothing or possibly errors? I really don't know.
+	# I'm ok with it, since I don't use OpenBSD,
+	# just keep it in mind if you copy from here)
+	alias ls='\ls -bh -FC -G'
 fi
+
 alias l='ls -l'
 alias la='l -a'
 alias lsa='ls -A'
