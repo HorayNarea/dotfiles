@@ -17,3 +17,7 @@ source ~/.dotfiles/includes/functions
 if [[ -f ~/.dotfiles/includes/host-specific/${HOST}/zshrc ]]; then
 	source ~/.dotfiles/includes/host-specific/${HOST}/zshrc
 fi
+
+if [[ -f ~/.zshrc-local ]]; then
+	source ~/.zshrc-local
+fi
