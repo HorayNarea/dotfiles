@@ -1,11 +1,11 @@
 [user]
-	email = HorayNarea@gmail.com
+	email = thomas@gecko.space
 	name = Thomas Sänger
 	signingkey = 0xA09EAC53B3A8080F
 [color]
 	ui = true
 [core]
-	editor = sublime-text
+	editor = sublime-text -w
 	compression = 9
 	loosecompression = 9
 	autocrlf = input
