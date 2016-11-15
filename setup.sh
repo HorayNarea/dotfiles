@@ -11,7 +11,7 @@ for source in files/global/*; do
 done
 
 # host-specific
-HOST=$(hostname)
+HOST=$(hostname -s)
 if [ -d files/host-specific/${HOST} ]; then
 	for source in files/host-specific/${HOST}/*; do
 		for target in $(echo ${source}|sed "s,files/host-specific/${HOST}/,,"|tr "_" "/"); do
