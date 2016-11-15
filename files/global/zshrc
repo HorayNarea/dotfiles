@@ -12,13 +12,13 @@ if ! zgen saved; then
 	zgen save
 fi
 
-source ~/.dotfiles/includes/config
-source ~/.dotfiles/includes/aliases
-source ~/.dotfiles/includes/functions
-
 if [[ -f ~/.dotfiles/includes/host-specific/${HOST}/zshrc ]]; then
 	source ~/.dotfiles/includes/host-specific/${HOST}/zshrc
 fi
+
+source ~/.dotfiles/includes/config
+source ~/.dotfiles/includes/aliases
+source ~/.dotfiles/includes/functions
 
 if [[ -f ~/.zshrc-local ]]; then
 	source ~/.zshrc-local
