@@ -1,0 +1,28 @@
+alias rm="grm -I"
+
+function weggucken() {
+	for item in $*; do
+		vlc --rate 1.25 --scale 0.5 $item vlc://quit >/dev/null 2>/dev/null
+		rm -i -v $item
+	done
+}
+
+function goclone() {
+	p=$(echo $1|sed 's,https://,,'|sed 's,http://,,'|sed 's,git://,,')
+	git clone $1 $p
+}
+
+export PATH="$HOME/bin:$PATH"
+
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export MANPATH="/usr/local/share/man:$MANPATH"
+export INFOPATH="/usr/local/share/info:$INFOPATH"
+
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
