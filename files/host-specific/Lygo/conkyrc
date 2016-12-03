@@ -86,18 +86,18 @@ ${voffset 1}${offset 1}${voffset 2}${color0}${fs_bar 4,18 /}${color}${goto 32}${
 # - NETWORK - #
 ###############
 ${voffset 4}${font Ubuntu:style=Bold:size=8}NETWORK $stippled_hr${font}
-# |--WLAN0
-${if_up wlan0}
-${voffset -5}${font Ubuntu:style=Bold:size=8}${alignc}${color2}wlan0${color}
-${voffset 2}${color}${goto 12}Signal: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${wireless_link_qual_perc wlan0}%${color}${font} ${alignr}${color2}${wireless_link_bar 8,60 wlan0}${color}
-${voffset 2}${color}${goto 12}Up: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${upspeed wlan0}${color}${font} ${alignr}${color2}${upspeedgraph wlan0 8,60 ${color1} ${color3}}${color}
-${voffset 2}${color}${goto 12}Down: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${downspeed wlan0}${color}${font} ${alignr}${color2}${downspeedgraph wlan0 8,60 ${color1} ${color3}}${color}
-${voffset 2}${color}${goto 12}IP: ${alignr}${color2}${addr wlan0}${color}
-${else}${voffset 4}${offset 4}${color0}${font Wingdings:size=20}N${font}${color}${voffset -6}${goto 32}wlan0 is disconnected${voffset 14}${endif}
-# |--ETH0
-${if_up eth0}
-${voffset -5}${font Ubuntu:style=Bold:size=8}${alignc}${color2}eth0${color}
-${voffset 2}${color}${goto 12}Up: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${upspeed eth0}${color}${font} ${alignr}${color2}${upspeedgraph eth0 8,60 ${color1} ${color3}}${color}
-${voffset 2}${color}${goto 12}Down: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${downspeed eth0}${color}${font} ${alignr}${color2}${downspeedgraph eth0 8,60 ${color1} ${color3}}${color}
-${voffset 2}${color}${goto 12}IP: ${alignr}${color2}${addr eth0}${color}
-${else}${voffset 4}${offset 4}${color0}${font Wingdings:size=20}N${font}${color}${voffset -6}${goto 32}eth0 is disconnected${voffset 14}${endif}
+# |--wlp2s0
+${if_up wlp2s0}
+${voffset -5}${font Ubuntu:style=Bold:size=8}${alignc}${color2}wlp2s0${color}
+${voffset 2}${color}${goto 12}Signal: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${wireless_link_qual_perc wlp2s0}%${color}${font} ${alignr}${color2}${wireless_link_bar 8,60 wlp2s0}${color}
+${voffset 2}${color}${goto 12}Up: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${upspeed wlp2s0}${color}${font} ${alignr}${color2}${upspeedgraph wlp2s0 8,60 ${color1} ${color3}}${color}
+${voffset 2}${color}${goto 12}Down: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${downspeed wlp2s0}${color}${font} ${alignr}${color2}${downspeedgraph wlp2s0 8,60 ${color1} ${color3}}${color}
+${voffset 2}${color}${goto 12}IP: ${alignr}${color2}${addr wlp2s0}${color}
+${else}${voffset 4}${offset 4}${color0}${font Wingdings:size=20}N${font}${color}${voffset -6}${goto 32}wlp2s0 is disconnected${voffset 14}${endif}
+# |--enp1s0
+${if_up enp1s0}
+${voffset -5}${font Ubuntu:style=Bold:size=8}${alignc}${color2}enp1s0${color}
+${voffset 2}${color}${goto 12}Up: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${upspeed enp1s0}${color}${font} ${alignr}${color2}${upspeedgraph enp1s0 8,60 ${color1} ${color3}}${color}
+${voffset 2}${color}${goto 12}Down: ${font Ubuntu:style=Bold:size=8}${color1}${goto 64}${downspeed enp1s0}${color}${font} ${alignr}${color2}${downspeedgraph enp1s0 8,60 ${color1} ${color3}}${color}
+${voffset 2}${color}${goto 12}IP: ${alignr}${color2}${addr enp1s0}${color}
+${else}${voffset 4}${offset 4}${color0}${font Wingdings:size=20}N${font}${color}${voffset -6}${goto 32}enp1s0 is disconnected${voffset 14}${endif}
