@@ -22,7 +22,6 @@ export INFOPATH="/usr/local/share/info:$INFOPATH"
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
-export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
