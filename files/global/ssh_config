@@ -14,8 +14,11 @@ Host *
 	ServerAliveInterval 10
 	Compression yes
 
-Host liquid-erfurt.org openjabber.tk
+Host liquid-erfurt.org
 	User thomas
 
 Host mail.gecko.space
 	User gecko1
+
+Host windsor.reparando.nl aldwych.reparando.nl blakehall.reparando.nl langley.reparando.nl
+	User root
