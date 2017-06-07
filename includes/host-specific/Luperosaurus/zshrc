@@ -23,3 +23,5 @@ export PATH=$GOPATH/bin:$PATH
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+export HOMEBREW_NO_AUTO_UPDATE=1
