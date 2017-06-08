@@ -24,10 +24,9 @@ function weggucken() {
 }
 
 function goclone() {
-	p=$(echo $1|sed 's,https://,,'|sed 's,http://,,'|sed 's,git://,,')
+	p=$(echo $1|sed -e 's,^git@,,' -e 's,^http://,,' -e 's,^https://,,' -e 's,.git$,,'|tr ":" "/")
 	git clone $1 $p
 }
-
 
 export PATH="$HOME/bin:$PATH"
 
