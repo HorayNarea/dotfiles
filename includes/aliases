@@ -4,6 +4,8 @@ alias sudo='sudo '
 
 # basic utils
 alias rm='rm -I'
+alias cp='cp -i'
+alias mv='mv -i'
 
 # as much as i don't like the whole GNU-ecosystem, ls from GNU Coreutils is more useful (to me!)
 # so we try to use it first and fallback to BSD-ls if on a BSD without GNU-ls
