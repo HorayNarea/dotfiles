@@ -37,5 +37,3 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export GOPATH=$HOME/projekte/gopath
 export PATH=$GOPATH/bin:$PATH
-
-export HOMEBREW_BUILD_FROM_SOURCE=1
