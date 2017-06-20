@@ -11,11 +11,7 @@ ConnectTimeout 30
 ServerAliveInterval 10
 Compression yes
 
-	ConnectTimeout 30
-	ServerAliveInterval 10
-	Compression yes
-
-Host liquid-erfurt.org
+Host helmut.demokratielabor.net willy.demokratielabor.net
 	User thomas
 
 Host mail.gecko.space
