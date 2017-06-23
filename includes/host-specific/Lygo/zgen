@@ -10,10 +10,10 @@ zgen loadall <<EOPLUGINS
 	robbyrussell/oh-my-zsh plugins/sublime
 
 	# 3rd-party plugins
-	robertzk/send.zsh
 	srijanshetty/zsh-pandoc-completion
 	t413/zsh-background-notify
 
 	# theme
-	robbyrussell/oh-my-zsh themes/agnoster
+	mafredri/zsh-async
+	sindresorhus/pure
 EOPLUGINS
