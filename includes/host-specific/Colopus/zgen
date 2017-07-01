@@ -1,0 +1,13 @@
+zgen loadall <<EOPLUGINS
+	# OMZ plugins
+	robbyrussell/oh-my-zsh plugins/brew
+	robbyrussell/oh-my-zsh plugins/golang
+	robbyrussell/oh-my-zsh plugins/httpie
+	robbyrussell/oh-my-zsh plugins/npm
+	robbyrussell/oh-my-zsh plugins/pip
+	robbyrussell/oh-my-zsh plugins/sublime
+
+	# theme
+	mafredri/zsh-async
+	sindresorhus/pure
+EOPLUGINS
