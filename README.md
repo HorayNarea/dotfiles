@@ -19,4 +19,3 @@ cd ~/.dotfiles
 * tree
 * ldns
 * htop
-* screen
