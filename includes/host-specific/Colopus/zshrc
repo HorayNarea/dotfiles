@@ -25,3 +25,5 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+export XZ_DEFAULTS="-T 0"
