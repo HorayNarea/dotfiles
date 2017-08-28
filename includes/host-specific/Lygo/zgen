@@ -1,6 +1,5 @@
 zgen loadall <<EOPLUGINS
 	# OMZ plugins
-	robbyrussell/oh-my-zsh plugins/brew
 	robbyrussell/oh-my-zsh plugins/colorize
 	robbyrussell/oh-my-zsh plugins/command-not-found
 	robbyrussell/oh-my-zsh plugins/golang
