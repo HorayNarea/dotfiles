@@ -17,5 +17,6 @@ Host helmut.demokratielabor.net willy.demokratielabor.net
 Host mail.gecko.space
 	User gecko1
 
-Host windsor.reparando.nl aldwych.reparando.nl blakehall.reparando.nl langley.reparando.nl
-	User root
+Host aur.archlinux.org
+	IdentityFile ~/.ssh/aur
+	User aur
