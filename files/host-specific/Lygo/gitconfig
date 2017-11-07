@@ -5,7 +5,7 @@
 [color]
 	ui = true
 [core]
-	editor = sublime-text -w
+	editor = subl -w
 	compression = 9
 	loosecompression = 9
 	autocrlf = input
@@ -14,7 +14,7 @@
 [diff]
 	algorithm = minimal
 [mergetool "sublime"]
-	cmd = sublime-text -w $MERGED
+	cmd = subl -w $MERGED
 	trustExitCode = false
 [merge]
 	tool = sublime
