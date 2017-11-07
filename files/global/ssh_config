@@ -11,7 +11,7 @@ ConnectTimeout 30
 ServerAliveInterval 10
 Compression yes
 
-Host helmut.demokratielabor.net willy.demokratielabor.net
+Host *.demokratielabor.net
 	User thomas
 
 Host mail.gecko.space
