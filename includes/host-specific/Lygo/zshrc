@@ -24,3 +24,5 @@ export PATH="$HOME/bin:$PATH"
 
 export GOPATH=$HOME/projekte/gopath
 export PATH=$GOPATH/bin:$PATH
+
+export XZ_DEFAULTS="-T 0"
