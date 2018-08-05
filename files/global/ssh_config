@@ -16,9 +16,6 @@ Compression yes
 Host *.demokratielabor.net
 	User thomas
 
-Host mail.gecko.space
-	User gecko1
-
 Host aur.archlinux.org
 	IdentityFile ~/.ssh/aur
 	User aur

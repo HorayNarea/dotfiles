@@ -75,13 +75,6 @@ ${voffset 1}${offset 1}${voffset 2}${color0}${membar 4,18}${color}${goto 32}${vo
 ${voffset 2}${offset 1}${color0}${font Poky:size=14}M${font}${color}${goto 32}${voffset -7}SWAP: ${font Ubuntu:style=Bold:size=8}${color1}$swapperc%${color}${font}
 ${voffset 1}${offset 1}${voffset 2}${color0}${swapbar 4,18}${color}${goto 32}${voffset -2}F: ${font Ubuntu:style=Bold:size=8}${color2}${swapfree}${color}${font} U: ${font Ubuntu:style=Bold:size=8}${color2}${swap}${color}${font}
 
-##########
-# - HD - #
-##########
-${voffset 4}${font Ubuntu:style=Bold:size=8}HDD $stippled_hr${font}
-${voffset 2}${offset 1}${color0}${font Poky:size=14}y${font}${color}${goto 32}${voffset -7}/: ${font Ubuntu:style=Bold:size=8}${color1}${fs_used_perc /}%${color}${font}
-${voffset 1}${offset 1}${voffset 2}${color0}${fs_bar 4,18 /}${color}${goto 32}${voffset -2}F: ${font Ubuntu:style=Bold:size=8}${color2}${fs_free /}${color}${font} U: ${font Ubuntu:style=Bold:size=8}${color2}${fs_used /}${color}${font}
-
 ###############
 # - NETWORK - #
 ###############
