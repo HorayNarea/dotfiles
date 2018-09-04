@@ -13,9 +13,18 @@ ConnectTimeout 30
 ServerAliveInterval 10
 Compression yes
 
-Host *.demokratielabor.net
-	User thomas
-
 Host aur.archlinux.org
 	IdentityFile ~/.ssh/aur
 	User aur
+
+Host siamensis.gecko.space
+	User tsaenger
+
+Host hans.demokratielabor.net
+	User thomas
+
+Host ludwig.demokratielabor.net
+	User root
+
+Host *.demokratielabor.net
+	User tsaenger
