@@ -2,15 +2,19 @@
 	email = thomas@gecko.space
 	name = Thomas Sänger
 	signingkey = 0xA09EAC53B3A8080F
+
 [color]
 	ui = true
+
 [core]
 	editor = subl -w
 	compression = 9
 	loosecompression = 9
 	autocrlf = input
+
 [apply]
 	whitespace = fix
+
 [diff]
 	algorithm = minimal
 [mergetool "sublime"]
@@ -22,12 +26,16 @@
 	prompt = false
 [push]
 	default = simple
+
 [pack]
 	compression = 9
+
 [branch]
 	autosetuprebase = always
+
 [help]
 	autocorrect = 20
+
 [commit]
 	template = ~/.dotfiles/files/gitmessage
 	gpgsign = true
