@@ -2,6 +2,9 @@ export HOST=$(hostname -s)
 
 export EDITOR=nano
 export DISABLE_AUTO_UPDATE=true
+export XZ_DEFAULTS="-T 0"
+
+export PATH="$HOME/bin:$PATH"
 
 source ~/.dotfiles/zgen/zgen.zsh
 if ! zgen saved; then
