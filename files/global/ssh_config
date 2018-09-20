@@ -20,9 +20,6 @@ Host aur.archlinux.org
 Host siamensis.gecko.space
 	User tsaenger
 
-Host hans.demokratielabor.net
-	User thomas
-
 Host ludwig.demokratielabor.net
 	User root
 
