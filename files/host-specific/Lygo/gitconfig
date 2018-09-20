@@ -17,13 +17,8 @@
 
 [diff]
 	algorithm = minimal
-[mergetool "sublime"]
-	cmd = subl -w $MERGED
-	trustExitCode = false
-[merge]
-	tool = sublime
-[mergetool]
-	prompt = false
+	tool = sublimerge
+
 [push]
 	default = simple
 
@@ -39,3 +34,13 @@
 [commit]
 	template = ~/.dotfiles/files/gitmessage
 	gpgsign = true
+
+[difftool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
+
+[merge]
+	tool = sublimerge
+
+[mergetool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+	trustExitCode = false
