@@ -14,7 +14,7 @@
 	whitespace = fix
 
 [diff]
-	algorithm = minimal
+	algorithm = histogram
 
 [push]
 	default = simple

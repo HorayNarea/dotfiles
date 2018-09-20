@@ -16,7 +16,7 @@
 	whitespace = fix
 
 [diff]
-	algorithm = minimal
+	algorithm = histogram
 	tool = sublimerge
 
 [push]
