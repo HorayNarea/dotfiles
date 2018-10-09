@@ -13,7 +13,6 @@ zgen loadall <<EOPLUGINS
 	# 3rd-party plugins
 	srijanshetty/zsh-pandoc-completion
 	t413/zsh-background-notify
-	sobolevn/wakatime-zsh-plugin
 
 	# theme
 	mafredri/zsh-async
