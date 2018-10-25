@@ -3,7 +3,6 @@
 alias sudo='sudo '
 
 # basic utils
-alias rm='rm -I'
 alias cp='cp -i'
 alias mv='mv -i'
 
