@@ -17,8 +17,5 @@ Host aur.archlinux.org
 	IdentityFile ~/.ssh/aur
 	User aur
 
-Host ludwig.demokratielabor.net
-	User root
-
 Host tokee.gecko.space
 	User horaynarea
