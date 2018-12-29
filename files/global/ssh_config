@@ -17,9 +17,6 @@ Host aur.archlinux.org
 	IdentityFile ~/.ssh/aur
 	User aur
 
-Host tokee.gecko.space
-	User horaynarea
-
 Host u194372.your-storagebox.de
 	User u194372
 	Port 23
