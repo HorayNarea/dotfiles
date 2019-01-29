@@ -14,7 +14,7 @@ cd ~/.dotfiles
 #### recommended Tools
 * ls from GNU Coreutils
 * sudo
-* screen
+* tmux
 * mosh
 * tree
 * ldns
