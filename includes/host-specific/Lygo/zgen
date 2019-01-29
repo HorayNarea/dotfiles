@@ -6,7 +6,6 @@ zgen loadall <<EOPLUGINS
 	robbyrussell/oh-my-zsh plugins/docker-compose
 	robbyrussell/oh-my-zsh plugins/golang
 	robbyrussell/oh-my-zsh plugins/httpie
-	robbyrussell/oh-my-zsh plugins/npm
 	robbyrussell/oh-my-zsh plugins/pip
 	robbyrussell/oh-my-zsh plugins/sublime
 
