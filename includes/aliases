@@ -27,7 +27,3 @@ alias la='l -a'
 alias lsa='ls -A'
 alias less='less -FRX'
 alias tree='tree -CF --dirsfirst'
-
-# others
-alias dig='drill'
-alias su='sudo su'
