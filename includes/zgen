@@ -6,6 +6,7 @@ zgen loadall <<EOPLUGINS
 	robbyrussell/oh-my-zsh plugins/zsh_reload
 
 	# 3rd-party plugins
+	unixorn/autoupdate-zgen
 	Tarrasch/zsh-mcd
 	zsh-users/zsh-completions src
 EOPLUGINS
