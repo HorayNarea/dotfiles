@@ -1,7 +1,4 @@
 zgen loadall <<EOPLUGINS
-	# Load the oh-my-zsh's library.
-	robbyrussell/oh-my-zsh
-
 	# OMZ plugins
 	robbyrussell/oh-my-zsh plugins/colored-man-pages
 	robbyrussell/oh-my-zsh plugins/mosh
@@ -11,6 +8,4 @@ zgen loadall <<EOPLUGINS
 	# 3rd-party plugins
 	Tarrasch/zsh-mcd
 	zsh-users/zsh-completions src
-	zsh-users/zsh-syntax-highlighting
-	zsh-users/zsh-history-substring-search
 EOPLUGINS
