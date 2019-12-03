@@ -1,5 +1,6 @@
 zgen loadall <<EOPLUGINS
 	# OMZ plugins
+	robbyrussell/oh-my-zsh
 	robbyrussell/oh-my-zsh plugins/colored-man-pages
 	robbyrussell/oh-my-zsh plugins/mosh
 	robbyrussell/oh-my-zsh plugins/sudo
@@ -8,5 +9,9 @@ zgen loadall <<EOPLUGINS
 	# 3rd-party plugins
 	unixorn/autoupdate-zgen
 	Tarrasch/zsh-mcd
+	zdharma/fast-syntax-highlighting
+
+	# zsh-users plugins
 	zsh-users/zsh-completions src
+	zsh-users/zsh-history-substring-search
 EOPLUGINS
