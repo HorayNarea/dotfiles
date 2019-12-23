@@ -15,7 +15,3 @@ ServerAliveInterval 10
 Host aur.archlinux.org
 	IdentityFile ~/.ssh/aur
 	User aur
-
-Host u194372.your-storagebox.de
-	User u194372
-	Port 23
