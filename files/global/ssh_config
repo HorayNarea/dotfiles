@@ -11,7 +11,6 @@ ControlPath ~/.ssh/socket-%r@%h:%p
 
 ConnectTimeout 30
 ServerAliveInterval 10
-Compression yes
 
 Host aur.archlinux.org
 	IdentityFile ~/.ssh/aur
