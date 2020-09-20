@@ -30,3 +30,6 @@
 
 [commit]
 	template = ~/.dotfiles/files/gitmessage
+
+[pull]
+	rebase = false
