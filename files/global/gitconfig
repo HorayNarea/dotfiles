@@ -6,8 +6,6 @@
 	ui = true
 
 [core]
-	compression = 9
-	loosecompression = 9
 	autocrlf = input
 
 [apply]
@@ -18,9 +16,6 @@
 
 [push]
 	default = simple
-
-[pack]
-	compression = 9
 
 [branch]
 	autosetuprebase = always
