@@ -5,10 +5,6 @@ Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.
 
 VerifyHostKeyDNS yes
 
-ControlMaster auto
-ControlPersist 10m
-ControlPath ~/.ssh/socket-%r@%h:%p
-
 ConnectTimeout 30
 ServerAliveInterval 10
 
