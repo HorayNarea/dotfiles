@@ -10,12 +10,11 @@ cd ~/.dotfiles
 #### Dependencies
 * git
 * zsh
+* ls from GNU Coreutils
 
 #### recommended Tools
-* ls from GNU Coreutils
 * sudo
 * tmux
 * mosh
 * tree
-* ldns
 * htop
