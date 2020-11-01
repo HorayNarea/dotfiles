@@ -20,11 +20,5 @@
 [branch]
 	autosetuprebase = always
 
-[help]
-	autocorrect = 20
-
-[commit]
-	template = ~/.dotfiles/files/gitmessage
-
 [pull]
 	rebase = false
