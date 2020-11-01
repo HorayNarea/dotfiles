@@ -1,6 +1,5 @@
 zgen loadall <<EOPLUGINS
 	# OMZ plugins
-	robbyrussell/oh-my-zsh plugins/fzf
 	robbyrussell/oh-my-zsh plugins/sublime
 
 	# theme
