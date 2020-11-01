@@ -4,7 +4,7 @@ function diff() {
 }
 
 function tre() {
-	tree -a -I '.git|.hg|.bzr|.svn|CVS|node_modules|.venv' "$@" | less;
+	tree -a -I '.git|.hg|.bzr|.svn|CVS|node_modules|.venv|venv' "$@" | less;
 }
 
 function fancy-ctrl-z() {
