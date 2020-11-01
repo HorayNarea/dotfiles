@@ -5,10 +5,5 @@ function weggucken() {
 	done
 }
 
-function goclone() {
-	p=$(echo $1|sed -e 's,^git@,,' -e 's,^http://,,' -e 's,^https://,,' -e 's,.git$,,'|tr ":" "/")
-	git clone $1 $p
-}
-
 export GOPATH=$HOME/projekte/gopath
 export PATH=$GOPATH/bin:$PATH
