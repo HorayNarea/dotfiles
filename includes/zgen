@@ -1,10 +1,10 @@
 zgen loadall <<EOPLUGINS
 	# OMZ plugins
-	robbyrussell/oh-my-zsh
-	robbyrussell/oh-my-zsh plugins/colored-man-pages
-	robbyrussell/oh-my-zsh plugins/mosh
-	robbyrussell/oh-my-zsh plugins/sudo
-	robbyrussell/oh-my-zsh plugins/zsh_reload
+	ohmyzsh/ohmyzsh
+	ohmyzsh/ohmyzsh plugins/colored-man-pages
+	ohmyzsh/ohmyzsh plugins/mosh
+	ohmyzsh/ohmyzsh plugins/sudo
+	ohmyzsh/ohmyzsh plugins/zsh_reload
 
 	# 3rd-party plugins
 	unixorn/autoupdate-zgen
