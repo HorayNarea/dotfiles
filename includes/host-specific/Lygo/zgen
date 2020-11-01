@@ -1,6 +1,7 @@
 zgen loadall <<EOPLUGINS
 	# OMZ plugins
-	ohmyzsh/ohmyzsh plugins/sublime
+	robbyrussell/oh-my-zsh plugins/fzf
+	robbyrussell/oh-my-zsh plugins/sublime
 
 	# theme
 	mafredri/zsh-async
