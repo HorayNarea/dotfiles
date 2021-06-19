@@ -1,6 +1,6 @@
 function weggucken() {
 	for item in $*; do
-		vlc --rate 1.30 --scale 0.5 $item vlc://quit >/dev/null 2>/dev/null
+		vlc --rate 1.5 --scale 0.5 $item vlc://quit >/dev/null 2>/dev/null
 		rm -i -v $item
 	done
 }
