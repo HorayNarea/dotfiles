@@ -19,5 +19,8 @@ setopt interactivecomments
 setopt auto_cd
 setopt prompt_subst
 
+setopt no_clobber            # Don't clobber existing files with > ....
+setopt append_create         # Refuse to create new files with >>
+
 ZSH_CACHE_DIR=~/.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
