@@ -8,7 +8,6 @@ zgen loadall <<EOPLUGINS
 
 	# 3rd-party plugins
 	unixorn/autoupdate-zgen
-	Tarrasch/zsh-mcd
 	zdharma/fast-syntax-highlighting
 
 	# zsh-users plugins
