@@ -4,5 +4,5 @@ zgen loadall <<EOPLUGINS
 
 	# theme
 	mafredri/zsh-async
-	sindresorhus/pure
+	sindresorhus/pure . main
 EOPLUGINS
