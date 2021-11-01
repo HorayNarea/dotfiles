@@ -6,9 +6,9 @@ zgen loadall <<EOPLUGINS
 
 	# 3rd-party plugins
 	unixorn/autoupdate-zgen
-	zdharma/fast-syntax-highlighting
 
 	# zsh-users plugins
 	zsh-users/zsh-completions src
 	zsh-users/zsh-history-substring-search
+	zsh-users/zsh-syntax-highlighting
 EOPLUGINS
