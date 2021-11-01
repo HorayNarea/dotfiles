@@ -8,10 +8,10 @@ export PATH="$HOME/bin:$PATH"
 source ~/.dotfiles/zgen/zgen.zsh
 if ! zgen saved; then
 	zgen oh-my-zsh
-	source ~/.dotfiles/includes/zgen
 	if [[ -f ~/.dotfiles/includes/host-specific/${HOST}/zgen ]]; then
 		source ~/.dotfiles/includes/host-specific/${HOST}/zgen
 	fi
+	source ~/.dotfiles/includes/zgen
 
 	zgen save
 fi
