@@ -1,10 +1,10 @@
 # Use Git's colored diff
 function diff() {
-	git diff --no-index "$@";
+	git diff --no-index "$@"
 }
 
 function tre() {
-	tree -a -I '.git|.hg|.bzr|.svn|CVS|node_modules|.venv|venv' "$@" | less;
+	tree -a -I '.git|.hg|.bzr|.svn|CVS|node_modules|.venv|venv' "$@" | less
 }
 
 function mkd() {
