@@ -7,6 +7,11 @@ function tre() {
 	tree -a -I '.git|.hg|.bzr|.svn|CVS|node_modules|.venv|venv' "$@" | less;
 }
 
+function mkd() {
+	mkdir -p "$@"
+	cd "$@"
+}
+
 function fancy-ctrl-z() {
 	if [[ $#BUFFER -eq 0 ]]; then
 		BUFFER="fg"
