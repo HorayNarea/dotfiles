@@ -10,13 +10,12 @@ cd ~/.dotfiles
 #### Dependencies
 * git
 * zsh
-* ls from GNU Coreutils
+* [exa](https://the.exa.website/) or ls from GNU Coreutils
 
 #### recommended Tools
 * sudo
 * tmux
 * mosh
-* tree
+* tree (only if exa is not installed)
 * htop
 * nano
-* exa
