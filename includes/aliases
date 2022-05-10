@@ -6,10 +6,18 @@ alias sudo='sudo '
 alias cp='cp -i'
 alias mv='mv -i'
 
-alias ls='\ls -bh -FC --group-directories-first --color'
+if command -v exa &> /dev/null; then
+	alias exa='exa -F --group-directories-first --color=always --group'
+
+	alias ls='exa'
+	alias tree='exa -T'
+else
+	alias ls='\ls -bh -CF --group-directories-first --color'
+	alias tree='tree -CF --dirsfirst'
+fi
+
 alias l='ls -l'
 alias la='l -a'
-alias lsa='ls -A'
+alias lsa='ls -a'
 
 alias less='less -FRX'
-alias tree='tree -CF --dirsfirst'

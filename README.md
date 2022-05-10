@@ -18,3 +18,5 @@ cd ~/.dotfiles
 * mosh
 * tree
 * htop
+* nano
+* exa
