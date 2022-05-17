@@ -10,5 +10,6 @@ zgen loadall <<EOPLUGINS
 	# zsh-users plugins
 	zsh-users/zsh-completions src
 	zsh-users/zsh-history-substring-search
-	zsh-users/zsh-syntax-highlighting
+#	zsh-users/zsh-syntax-highlighting
+	zdharma-continuum/fast-syntax-highlighting
 EOPLUGINS
