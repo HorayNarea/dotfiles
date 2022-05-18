@@ -1,7 +1,6 @@
 export HOST=$(hostname -s)
 
 export EDITOR=nano
-export DISABLE_AUTO_UPDATE=true
 
 export PATH="$HOME/bin:$PATH"
 
