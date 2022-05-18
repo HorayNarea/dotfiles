@@ -5,15 +5,18 @@ export DISABLE_AUTO_UPDATE=true
 
 export PATH="$HOME/bin:$PATH"
 
-source ~/.dotfiles/zgen/zgen.zsh
-if ! zgen saved; then
-	zgen oh-my-zsh
-	if [[ -f ~/.dotfiles/includes/host-specific/${HOST}/zgen ]]; then
-		source ~/.dotfiles/includes/host-specific/${HOST}/zgen
-	fi
-	source ~/.dotfiles/includes/zgen
+source ~/.zgenom/zgenom.zsh
 
-	zgen save
+zgenom autoupdate
+
+if ! zgenom saved; then
+	zgenom ohmyzsh
+	if [[ -f ~/.dotfiles/includes/host-specific/${HOST}/zgenom ]]; then
+		source ~/.dotfiles/includes/host-specific/${HOST}/zgenom
+	fi
+	source ~/.dotfiles/includes/zgenom
+
+	zgenom save
 fi
 
 if [[ -f ~/.dotfiles/includes/host-specific/${HOST}/zshrc ]]; then

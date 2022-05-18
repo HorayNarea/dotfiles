@@ -1,0 +1,13 @@
+zgenom loadall <<EOPLUGINS
+	# OMZ plugins
+	ohmyzsh/ohmyzsh plugins/colored-man-pages
+	ohmyzsh/ohmyzsh plugins/fancy-ctrl-z
+	ohmyzsh/ohmyzsh plugins/mosh
+	ohmyzsh/ohmyzsh plugins/sudo
+
+	# zsh-users plugins
+	zsh-users/zsh-completions
+	zsh-users/zsh-history-substring-search
+#	zsh-users/zsh-syntax-highlighting
+	zdharma-continuum/fast-syntax-highlighting
+EOPLUGINS

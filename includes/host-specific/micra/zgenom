@@ -1,0 +1,6 @@
+zgenom loadall <<EOPLUGINS
+	# OMZ plugins
+
+	# theme
+	sindresorhus/pure
+EOPLUGINS

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git clone https://github.com/tarjoilija/zgen ~/.dotfiles/zgen
+git clone https://github.com/jandamm/zgenom ~/.zgenom
 
 # global
 for source in files/global/*; do
