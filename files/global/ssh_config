@@ -9,7 +9,6 @@ ConnectTimeout 30
 ServerAliveInterval 10
 
 Host aur.archlinux.org
-	IdentityFile ~/.ssh/aur
 	User aur
 
 Host github.com
