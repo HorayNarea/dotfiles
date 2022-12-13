@@ -1,6 +1,9 @@
 zgenom loadall <<EOPLUGINS
 	# OMZ plugins
 
+        # history sync
+        ellie/atuin
+
 	# theme
 	sindresorhus/pure
 EOPLUGINS
