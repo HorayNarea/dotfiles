@@ -35,3 +35,7 @@ mouse_mode false
 // Default: true
 //
 copy_on_select false
+
+// Choose the mode that zellij uses when starting up.
+// Default: normal
+default_mode "locked"
