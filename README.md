@@ -14,7 +14,7 @@ cd ~/.dotfiles
 
 #### recommended Tools
 * sudo
-* tmux
+* zellij
 * mosh
 * tree (only if exa is not installed)
 * htop
