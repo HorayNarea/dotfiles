@@ -10,7 +10,7 @@ cd ~/.dotfiles
 #### Dependencies
 * git
 * zsh
-* [exa](https://the.exa.website/) or ls from GNU Coreutils
+* [eza](https://github.com/eza-community/eza) or ls from GNU Coreutils
 
 #### recommended Tools
 * sudo

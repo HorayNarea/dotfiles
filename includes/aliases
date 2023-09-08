@@ -5,11 +5,11 @@ alias sudo='sudo '
 alias cp='cp -i'
 alias mv='mv -i'
 
-if command -v exa &> /dev/null; then
-	alias exa='exa -F --group-directories-first --color=always --group'
+if command -v eza &> /dev/null; then
+	alias eza='eza -F --group-directories-first --color=always --group'
 
-	alias ls='exa'
-	alias tree='exa -T'
+	alias ls='eza'
+	alias tree='eza -T'
 else
 	alias ls='\ls -bh -CF --group-directories-first --color'
 	alias tree='tree -CF --dirsfirst'
