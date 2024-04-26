@@ -1,0 +1,41 @@
+[user]
+	email = thomas@gecko.space
+	name = Thomas Sänger
+	signingkey = 0xA09EAC53B3A8080F
+
+[color]
+	ui = true
+
+[core]
+	editor = subl -w
+	autocrlf = input
+
+[apply]
+	whitespace = fix
+
+[diff]
+	algorithm = histogram
+	tool = sublimerge
+
+[push]
+	default = simple
+
+[branch]
+	autosetuprebase = always
+
+[commit]
+	gpgsign = true
+
+[difftool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
+
+[merge]
+	tool = sublimerge
+
+[mergetool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+	trustExitCode = false
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
