@@ -19,3 +19,4 @@ cd ~/.dotfiles
 * tree (only if exa is not installed)
 * htop
 * nano
+* [delta](https://github.com/dandavison/delta)
