@@ -8,3 +8,11 @@ Host aur.archlinux.org
 
 Host github.com
 	UpdateHostKeys yes
+
+Host zer.vpn
+	User horaynarea
+
+Host oci1.gecko.space
+	User ubuntu
+Host oci2.gecko.space
+	User ubuntu
