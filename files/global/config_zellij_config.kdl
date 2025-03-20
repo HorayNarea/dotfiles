@@ -1,27 +1,34 @@
-// Toggle between having pane frames around the panes
-// Options:
-//   - true (default)
-//   - false
-//
-pane_frames false
-
-// Choose the Zellij color theme. This theme must be specified in the themes section or loaded from the themes folder.
-// See https://zellij.dev/documentation/themes
+// Choose the theme that is specified in the themes section.
 // Default: default
+// See https://zellij.dev/documentation/themes
 //
 theme "dracula"
 
-// Toggle enabling the mouse mode. On certain configurations, or terminals this could potentially interfere with copying text.
+// Toggle enabling the mouse mode.
+// On certain configurations, or terminals this could
+// potentially interfere with copying text.
 // Options:
 //   - true (default)
 //   - false
 //
 mouse_mode false
 
-// Enable or disable automatic copy (and clear) of selection when releasing mouse
+// Toggle having pane frames around the panes
+// Options:
+//   - true (default, enabled)
+//   - false
+//
+pane_frames false
+
+// Enable automatic copying (and clearing) of selection when releasing mouse
 // Default: true
 //
 copy_on_select false
+
+// Whether to show tips on startup
+// Default: true
+//
+show_startup_tips false
 
 ui {
     pane_frames {
